@@ -1,0 +1,48 @@
+<body>
+  <header><h2>APEX</h2></header>
+  <main class="container" style="display:flex;">
+    <div style="margin:20px;">
+      <section class="create"></section>
+      <form
+        class="create-filter"
+        style="display: flex; flex-direction: column; width: 200px;"
+      >
+        Nome da máquina
+        <input type="text" value="" id="i-name"/>
+
+        Nome do usuário
+        <input type="text" value="" id="i-user" />
+
+        Processador
+        <input type="text" value="" id="i-cpu" />
+
+        RAM
+        <input type="text" value="" id="i-ram"/>
+
+        Armazenamento
+        <select type="" value="" id="i-storage">
+          <option>SSD</option>
+          <option>HD</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+    <div style="margin: 20px;">
+      <section class="search"></section>
+      <form
+        class="filter"
+        style="display: flex; flex-direction: column; width: 200px;"
+      >
+        Pesquisar
+        <input type="text" value="" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <section class="machine">
+        <h2>Lista</h2>
+        <div class="machine-list"></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="js/index.js"></script>
+</body>
